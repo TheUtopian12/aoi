@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import HeaderItem from "../components/HeaderItem";
+import Link from "next/link";
 import {
   BadgeCheckIcon,
   CollectionIcon,
@@ -17,12 +18,15 @@ const Header = () => {
     items-center h-auto"
     >
       <div className="flex flex-grow justify-evenly max-w-2xl">
-        <HeaderItem title="HOME" Icon={HomeIcon} />
+     <Link href={'/'}><HeaderItem title="HOME" Icon={HomeIcon} /></Link>
+        
         <HeaderItem title="TRENDING" Icon={LightningBoltIcon} />
         <HeaderItem title="VERIFIED" Icon={BadgeCheckIcon} />
         <HeaderItem title="COLLECTIONS" Icon={CollectionIcon} />
         <HeaderItem title="SEARCH" Icon={SearchIcon} />
-        <HeaderItem title="ACCOUNT" Icon={UserIcon} />
+      <Link href={'/Profile'}><HeaderItem title="ACCOUNT" Icon={UserIcon} /></Link>
+      
+        
       </div>
 
       <Image

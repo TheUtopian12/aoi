@@ -8,17 +8,9 @@ import request from "../utils/request";
 export default function Home({ results }) {
   return (
     <div>
-      <Head>
-        <title>AOI</title>
-      </Head>
-
-      <Header />
-
       <Nav />
 
       <Results results={results} />
-
-      
     </div>
   );
 }
