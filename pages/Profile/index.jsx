@@ -4,7 +4,7 @@ import React from "react";
 const index = () => {
   return (
     <div className="flex h-[100vh] justify-center items-center">
-      <div className="flex flex-col w-[98%] sm:w-[75%] h-[600px] bg-[#292B2F]">
+      <div className="flex flex-col w-[98%] sm:w-[75%] h-[600px] bg-[#292B2F] rounded-xl">
         <div className="flex items-center gap-4 px-10 pt-2 sm:px-20 sm:translate-y-[-65px] ">
           <Image
             src={"/avatar.png"}
